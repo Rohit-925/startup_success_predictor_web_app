@@ -40,10 +40,10 @@ def main():
     
    
     st.markdown(html_temp,unsafe_allow_html=True)
-    age_first_funding_year = st.text_input("age_first_funding_year","Type Here")
-    age_last_funding_year = st.text_input("age_last_funding_yearkewness","Type Here")
-    age_first_milestone_year = st.text_input("age_first_milestone_year","Type Here")
-    age_last_milestone_year = st.text_input("age_last_milestone_year","Type Here")
+    age_first_funding_year = st.text_input("Age First-Funding Year","Type Here")
+    age_last_funding_year = st.text_input("Age Last-Funding Year","Type Here")
+    age_first_milestone_year = st.text_input("Age First-Milestone Year","Type Here")
+    age_last_milestone_year = st.text_input("Age Last-Milestone Year","Type Here")
     result=""
     if st.button("Predict"):
         result=predict_startup_success(age_first_funding_year, age_last_funding_year, age_first_milestone_year, age_last_milestone_year)
